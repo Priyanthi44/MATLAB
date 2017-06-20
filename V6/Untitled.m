@@ -1,0 +1,1 @@
+sim('DCmotor.slx');

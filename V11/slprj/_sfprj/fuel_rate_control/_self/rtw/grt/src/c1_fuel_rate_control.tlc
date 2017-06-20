@@ -1,0 +1,156 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   23 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_active_c1_fuel_rate_control"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_O2"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "O2"\
+    }\
+    ChartData {\
+      Name         "is_active_O2"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "O2"\
+    }\
+    ChartData {\
+      Name         "is_A"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "O2.A"\
+    }\
+    ChartData {\
+      Name         "is_Pressure"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Pressure"\
+    }\
+    ChartData {\
+      Name         "is_active_Pressure"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "Pressure"\
+    }\
+    ChartData {\
+      Name         "is_Throttle"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Throttle"\
+    }\
+    ChartData {\
+      Name         "is_active_Throttle"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "Throttle"\
+    }\
+    ChartData {\
+      Name         "is_Speed"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Speed"\
+    }\
+    ChartData {\
+      Name         "is_active_Speed"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "Speed"\
+    }\
+    ChartData {\
+      Name         "is_Fail"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fail"\
+    }\
+    ChartData {\
+      Name         "is_active_Fail"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "Fail"\
+    }\
+    ChartData {\
+      Name         "is_Multi"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fail.Multi"\
+    }\
+    ChartData {\
+      Name         "is_Fueling_Mode"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fueling_Mode"\
+    }\
+    ChartData {\
+      Name         "is_active_Fueling_Mode"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "Fueling_Mode"\
+    }\
+    ChartData {\
+      Name         "is_Fuel_Disabled"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fueling_Mode.Fuel_Disabled"\
+    }\
+    ChartData {\
+      Name         "is_Running"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fueling_Mode.Running"\
+    }\
+    ChartData {\
+      Name         "was_Running"\
+      Description  "StatePrevActiveChild"\
+      SFName       ""\
+      Path         "Fueling_Mode.Running"\
+    }\
+    ChartData {\
+      Name         "is_Low_Emissions"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fueling_Mode.Running.Low_Emissions"\
+    }\
+    ChartData {\
+      Name         "was_Low_Emissions"\
+      Description  "StatePrevActiveChild"\
+      SFName       ""\
+      Path         "Fueling_Mode.Running.Low_Emissions"\
+    }\
+    ChartData {\
+      Name         "is_Rich_Mixture"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fueling_Mode.Running.Rich_Mixture"\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
